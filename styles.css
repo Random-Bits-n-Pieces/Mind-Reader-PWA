@@ -1,0 +1,171 @@
+/* 1. Use a more-intuitive box-sizing model */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* 2. Remove default margin */
+* {
+  margin: 0;
+}
+
+body {
+  /* 3. Add accessible line-height */
+  line-height: 1.5;
+  /* 4. Improve text rendering */
+  -webkit-font-smoothing: antialiased;
+}
+
+/* 5. Improve media defaults */
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+/* 6. Inherit fonts for form controls */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* 7. Avoid text overflows */
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+/* 8. Improve line wrapping */
+p {
+  text-wrap: pretty;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-wrap: balance;
+}
+
+/*
+    9. Create a root stacking context
+  */
+#root,
+#__next {
+  isolation: isolate;
+}
+
+/* RESET COMPLETE */
+body {
+  background-color: rgb(15, 15, 15);
+  color: rgb(200, 200, 200);
+  font-family: "Courier New", Courier, monospace;
+}
+
+/* Button styles */
+button {
+  display: inline-block;
+  font-weight: 400;
+  color: #fff;
+  text-align: center;
+  vertical-align: middle;
+  /* user-select: none; */
+  background-color: #3b5f77;
+  border: 1px solid #3b5f77;
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  border-radius: 0.25rem;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+    border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+button:hover {
+  color: #fff;
+  background-color: #2b4557;
+  border-color: #1d2e3a;
+}
+button:focus,
+button.focus {
+  outline: 0;
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+button:disabled,
+button.disabled {
+  opacity: 0.65;
+}
+
+.card {
+  border-radius: 25px;
+  border: solid 1px rgb(200, 200, 200);
+  font-weight: bolder;
+  background-image: url("img/Background.webp");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-size: cover;
+  background-blend-mode: luminosity;
+  background-color: #3b5f77;
+  color: whitesmoke;
+  font-weight: bolder;
+  font-size: 24px;
+  text-shadow: 1px 1px black;
+}
+
+.cardNumbers {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+  row-gap: 20px;
+  column-gap: 5px;
+  border-radius: 25px;
+  backdrop-filter: blur(1px) brightness(0.9);
+  padding: 20px;
+  height: 400px;
+}
+
+main {
+  align-items: center;
+  text-align: center;
+  margin: 20px;
+}
+
+section {
+  width: 300px;
+  max-width: 300px;
+  height: 500px;
+
+  border: solid 1px rgb(200, 200, 200);
+}
+
+#sectionTitle,
+#sectionInstructions,
+#sectionResult {
+  display: grid;
+  place-items: center;
+}
+
+.yesNo {
+  display: grid;
+  place-items: center;
+  grid-template-columns: 1fr 1fr;
+  height: unset;
+}
+
+.yesNo > button {
+  width: 120px;
+}
+
+.hidden {
+  display: none !important;
+}

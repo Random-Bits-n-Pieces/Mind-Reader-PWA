@@ -1,0 +1,82 @@
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <link rel="shortcut icon" href="https://c.s-microsoft.com/favicon.ico?v2" />
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="manifest" href="manifest.json">
+    <title>Mind Reader</title>
+</head>
+
+<body>
+    <main>
+        <section id="sectionTitle">
+            <h1>I can read your mind.</h1>
+            <button id="btnContinue">Continue</button>
+        </section>
+        <section id="sectionInstructions" class="hidden">
+            <h2>Pick a number</h2>
+            <p>Pick a whole number from 1 to 60 including 1 and 60. Remember dont let me the number. I'll show you a few
+                cards, you tell me if you see your number and than I'll amaze you and tell you your number.</p>
+            <button id="btnPlay">Play</button>
+        </section>
+        <section id="sectionCard0" class="card hidden">
+            <div class="cardNumbers">
+            </div>
+            <div class="yesNo">
+                <button id="btnYes0">Yes</button>
+                <button id="btnNo0">No</button>
+            </div>
+        </section>
+        <section id="sectionCard1" class="card hidden">
+            <div class="cardNumbers">
+            </div>
+            <div class="yesNo">
+                <button id="btnYes1">Yes</button>
+                <button id="btnNo1">No</button>
+            </div>
+        </section>
+        <section id="sectionCard2" class="card hidden">
+            <div class="cardNumbers">
+            </div>
+            <div class="yesNo">
+                <button id="btnYes2">Yes</button>
+                <button id="btnNo2">No</button>
+            </div>
+        </section>
+        <section id="sectionCard3" class="card hidden">
+            <div class="cardNumbers">
+            </div>
+            <div class="yesNo">
+                <button id="btnYes3">Yes</button>
+                <button id="btnNo3">No</button>
+            </div>
+        </section>
+        <section id="sectionCard4" class="card hidden">
+            <div class="cardNumbers">
+            </div>
+            <div class="yesNo">
+                <button id="btnYes4">Yes</button>
+                <button id="btnNo4">No</button>
+            </div>
+        </section>
+        <section id="sectionCard5" class="card hidden">
+            <div class="cardNumbers">
+            </div>
+            <div class="yesNo">
+                <button id="btnYes5">Yes</button>
+                <button id="btnNo5">No</button>
+            </div>
+        </section>
+        <section id="sectionResult" class="hidden">
+            <h2>Your number is</h2>
+            <label id="lblResult"></label>
+            <button id="btnTryAgain">Try again</button>
+        </section>
+    </main>
+    <script type="module" src="main.js"></script>
+</body>
+
+</html>
