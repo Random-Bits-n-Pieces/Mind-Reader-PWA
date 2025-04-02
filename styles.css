@@ -137,15 +137,13 @@ button.disabled {
 main {
   align-items: center;
   text-align: center;
-  margin: 20px;
+  margin: auto;
+  width: 300px;
 }
 
 section {
   width: 300px;
-  max-width: 300px;
-  height: 500px;
-
-  border: solid 1px rgb(200, 200, 200);
+  min-height: 500px;
 }
 
 #sectionTitle,
@@ -170,6 +168,10 @@ section {
   display: none !important;
 }
 
-#lblResult {
-  font-size: 1vh;
+.answer {
+  font-size: 8rem;
+}
+
+.problem {
+  font-size: 2rem;
 }

@@ -57,12 +57,16 @@ const populateCards = () =>
 }
 
 const theBigReveal = () => {
+    lblResult.classList.remove('answer','problem');
+
     if (yourNumber === 0 || yourNumber > 60)
     {
         lblResult.innerText = "No cheating, try again."
+    lblResult.classList.add('problem');
         return;
     }
 
+    lblResult.classList.add('answer');
     lblResult.innerText = yourNumber;
 }
 
