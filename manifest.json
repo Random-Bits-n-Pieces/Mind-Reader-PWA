@@ -1,0 +1,18 @@
+{
+  "lang": "en-us",
+  "name": "Mind Reader App",
+  "short_name": "Mind Reader",
+  "description": "I can guess the number your thinking of.",
+  "scope": "/Mind-Reader-PWA/",
+  "start_url": "/Mind-Reader-PWA/",
+  "background_color": "#2a86b2",
+  "theme_color": "#2a86b2",
+  "orientation": "any",
+  "display": "standalone",
+  "icons": [
+    {
+      "src": "/Slider-Puzzle-PWA/Icon512.png",
+      "sizes": "512x512"
+    }
+  ]
+}

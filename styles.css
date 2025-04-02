@@ -169,3 +169,7 @@ section {
 .hidden {
   display: none !important;
 }
+
+#lblResult {
+  font-size: 1vh;
+}

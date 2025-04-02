@@ -77,6 +77,11 @@
         </section>
     </main>
     <script type="module" src="main.js"></script>
+    <script>
+        if ('serviceWorker' in navigator) {
+            navigator.serviceWorker.register('sw.js', { scope: '/Mind-Reader-PWA/' });
+        }
+    </script>
 </body>
 
 </html>
